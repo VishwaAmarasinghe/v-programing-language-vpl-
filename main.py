@@ -1,0 +1,83 @@
+# my programing launguage
+
+print("Welcome to v programing language (vpl)\n ©️all rights reserved")
+def pl():
+    com = input("➡️")
+#print
+    if com == "printv":
+        printv = input("printv:-")
+        print(printv)
+#calulatio prosses(code start)
+    elif com == "+":
+        st = input("1st:-")
+        nd = input("2nd:-")
+        answer = float(st) + float(nd)
+        print(answer)
+    elif com == "-":
+        st = input("1st:-")
+        nd = input("2nd:-")
+        answer = float(st) - float(nd)
+        print(answer)
+    elif com == "/":
+        st = input("1st:-")
+        nd = input("2nd:-")
+        answer = float(st) / float(nd)
+        print(answer)
+    elif com == "*":
+        st = input("1st:-")
+        nd = input("2nd:-")
+        answer = float(st) * float(nd)
+        print(answer)
+    # calulatio prosses(code end)
+    elif com == "lenv":
+        lenv = input("word:-")
+        print(len(lenv))
+    elif com == "vpl --dev":
+        print("⚫ Vishwa Poornaka Amarasinghe \n⚫ Jaysanka Weerasinghe")
+    elif com == "vpl --version":
+        version = "1.0.0"
+        print(version)
+    elif com == "lowerv":
+        lowerv = input("lowerv:-")
+        print(lowerv.lower())
+    elif com == "upperv":
+        upperv = input("upperv:-")
+        print(upperv.upper())
+    elif com == "islowerv":
+        islowerv = input("islowerv:-")
+        print(islowerv.islower())
+    elif com == "isupperv":
+        isupperv = input("isupperv:-")
+        print(isupperv.isupper())
+    elif com == "replacev":
+        replacev = input("replacev:-")
+        re = input("what do yo want to replace:-")
+        ren =input("enter the word/sentencs:-")
+        print(replacev.replace(re,ren))
+    elif com == "indexv":
+        indexv = input("indexv:-")
+        indexn = input("the word/sentence that you want to index:-")
+        print(indexv.index(indexn))
+
+
+
+
+
+
+    else:
+        print("wrong code please try again")
+        pl()
+    pl()
+try:
+    pl()
+except:
+    print("write a correct command this not valid")
+try:
+    pl()
+except ValueError:
+    print("write a correct command this not valid")
+pl()
+
+
+
+
