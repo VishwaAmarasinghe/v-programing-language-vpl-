@@ -1,6 +1,8 @@
+from math import *
 # my programing launguage
 
 print("Welcome to v programing language (vpl)\n ©️all rights reserved")
+
 def pl():
     com = input("➡️")
 #print
@@ -52,8 +54,8 @@ def pl():
     elif com == "replacev":
         replacev = input("replacev:-")
         re = input("what do yo want to replace:-")
-        ren =input("enter the word/sentencs:-")
-        print(replacev.replace(re,ren))
+        ren = input("enter the word/sentencs:-")
+        print(replacev.replace(re, ren))
     elif com == "indexv":
         indexv = input("indexv:-")
         indexn = input("the word/sentence that you want to index:-")
@@ -61,7 +63,8 @@ def pl():
 
 
 
-
+    elif com == "powv":
+        print(pow(int(input("powv 1st number-")), int(input("powv 2nd number-"))))
 
 
     else:
