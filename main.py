@@ -65,7 +65,15 @@ def pl():
 
     elif com == "powv":
         print(pow(int(input("powv 1st number-")), int(input("powv 2nd number-"))))
-
+    elif com == "roundv":
+        roundv = float(input("roundv:-"))
+        print(round(roundv))
+    elif com == "-roundv":
+        roundvm = float(input("-roundv:-"))
+        print(-round(roundvm))
+    elif com == "absv":
+        absv = float(input("absv:-"))
+        print(abs(absv))
 
     else:
         print("wrong code please try again")
@@ -78,6 +86,14 @@ except:
 try:
     pl()
 except ValueError:
+    print("write a correct command this not valid")
+try:
+    pl()
+except TypeError:
+    print("write a correct command this not valid")
+try:
+    pl()
+except SyntaxError:
     print("write a correct command this not valid")
 pl()
 
