@@ -74,7 +74,10 @@ def pl():
     elif com == "absv":
         absv = float(input("absv:-"))
         print(abs(absv))
-
+        #jaye aiyya meka thama palleha thiyenne code eka
+    elif com == "maxv":
+        maxv = input("maxv:-")
+        print(max(maxv))
     else:
         print("wrong code please try again")
         pl()
