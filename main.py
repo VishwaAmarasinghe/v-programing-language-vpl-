@@ -5,6 +5,7 @@ print("Welcome to v programing language (vpl)\n ©️all rights reserved")
 
 def pl():
     com = input("➡️")
+
 #print
     if com == "printv":
         printv = input("printv:-")
@@ -90,6 +91,11 @@ def pl():
     elif com == "facv":
         facv = int(input("facv:-"))
         print(factorial(facv))
+    elif com == "floatv":
+        floatv = input("floatv:-")
+        print(float(floatv))
+
+
     else:
         print("wrong code please try again")
         pl()
