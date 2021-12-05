@@ -94,6 +94,10 @@ def pl():
     elif com == "floatv":
         floatv = input("floatv:-")
         print(float(floatv))
+    if com == "comv":
+        comv = input("#")
+        print("comment added")
+
 
 
     else:
