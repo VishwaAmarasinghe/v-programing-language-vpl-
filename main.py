@@ -81,6 +81,15 @@ def pl():
     elif com == "sqrtv":
         sqrtv = float(input("sqrtv:-"))
         print(sqrt(sqrtv))
+    elif com == "ceilv":
+        ceilv = float(input("ceilv:-"))
+        print(ceil(ceilv))
+    elif com == "floorv":
+        floorv = float(input("floorv:-"))
+        print(floor(floorv))
+    elif com == "facv":
+        facv = int(input("facv:-"))
+        print(factorial(facv))
     else:
         print("wrong code please try again")
         pl()
