@@ -78,6 +78,9 @@ def pl():
     elif com == "maxv":
         maxv = input("maxv:-")
         print(max(maxv))
+    elif com == "sqrtv":
+        sqrtv = float(input("sqrtv:-"))
+        print(sqrt(sqrtv))
     else:
         print("wrong code please try again")
         pl()
@@ -98,8 +101,10 @@ try:
     pl()
 except SyntaxError:
     print("write a correct command this not valid")
+try:
+    pl()
+except FloatingPointError:
+    print("write a correct command this not valid")
 pl()
-
-
 
 
