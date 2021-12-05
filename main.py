@@ -97,8 +97,14 @@ def pl():
     if com == "comv":
         comv = input("#")
         print("comment added")
-
-
+    elif com == "inv":
+        text = input("text:-")
+        word = input("word that you find:-")
+        print(word in text)
+    elif com == "notinv":
+        text = input("text:-")
+        word = input("word that you find:-")
+        print(word not in text)
 
     else:
         print("wrong code please try again")
