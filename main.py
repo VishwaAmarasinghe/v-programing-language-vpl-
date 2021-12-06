@@ -61,9 +61,6 @@ def pl():
         indexv = input("indexv:-")
         indexn = input("the word/sentence that you want to index:-")
         print(indexv.index(indexn))
-
-
-
     elif com == "powv":
         print(pow(int(input("powv 1st number-")), int(input("powv 2nd number-"))))
     elif com == "roundv":
@@ -94,7 +91,7 @@ def pl():
     elif com == "floatv":
         floatv = input("floatv:-")
         print(float(floatv))
-    if com == "comv":
+    elif com == "comv":
         comv = input("#")
         print("comment added")
     elif com == "inv":
@@ -105,11 +102,22 @@ def pl():
         text = input("text:-")
         word = input("word that you find:-")
         print(word not in text)
+    elif com == "listv":
+        listv = [input("enter the list:-")]
+        print(listv)
+    elif com =="clearv":
+        listv = [input("listv:-")]
+        listv.clear()
+        print(listv)
+        print("list cleared")
+
 
     else:
         print("wrong code please try again")
         pl()
-    pl()
+
+
+
 try:
     pl()
 except:
