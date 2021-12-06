@@ -110,6 +110,10 @@ def pl():
         listv.clear()
         print(listv)
         print("list cleared")
+    elif com == "for in v":
+        forv = input("words-")
+        for word in forv:
+            print(word)
 
 
     else:
