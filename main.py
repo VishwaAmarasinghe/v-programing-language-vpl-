@@ -114,7 +114,11 @@ def pl():
         forv = input("words-")
         for word in forv:
             print(word)
-
+    elif com == "rangev":
+        num = int(input("1st number:-"))
+        num2 = int(input("2nd number:-"))
+        for number in range(num, num2):
+            print(number)
 
     else:
         print("wrong code please try again")
