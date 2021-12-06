@@ -31,6 +31,11 @@ def pl():
         nd = input("2nd:-")
         answer = float(st) * float(nd)
         print(answer)
+    elif com == "**":
+        st = input("1st:-")
+        nd = input("2nd:-")
+        answer = float(st) ** float(nd)
+        print(answer)
     # calulatio prosses(code end)
     elif com == "lenv":
         lenv = input("word:-")
@@ -119,7 +124,7 @@ def pl():
         num2 = int(input("2nd number:-"))
         for number in range(num, num2):
             print(number)
-
+    
     else:
         print("wrong code please try again")
         pl()
