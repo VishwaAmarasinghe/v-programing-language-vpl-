@@ -4,7 +4,7 @@ from math import *
 print("Welcome to v programing language (vpl)\n ©️all rights reserved")
 
 def pl():
-    com = input("➡️")
+    com = input("➡️-  ")
 
 #print
     if com == "printv":
@@ -35,6 +35,11 @@ def pl():
         st = input("1st:-")
         nd = input("2nd:-")
         answer = float(st) ** float(nd)
+        print(answer)
+    elif com == "//":
+        st = input("1st:-")
+        nd = input("2nd:-")
+        answer = float(st) // float(nd)
         print(answer)
     # calulatio prosses(code end)
     elif com == "lenv":
