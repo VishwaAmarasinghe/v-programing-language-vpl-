@@ -1,4 +1,6 @@
 from math import *
+import tkinter as tk
+from threading import Thread
 # my programing launguage
 
 print("Welcome to v programing language (vpl)\n ©️all rights reserved")
@@ -129,7 +131,29 @@ def pl():
         num2 = int(input("2nd number:-"))
         for number in range(num, num2):
             print(number)
-    
+    elif com == "windowv":
+        print("when you create this window you are unable to use vpl until you close this window")
+        canvas = tk.Tk()
+        size = input("size of window:-")
+        title = input("title of the window:-")
+        color = input("color of window:-")
+        txt = input("text:-")
+        t = ("poppins", 35, "bold")
+        label1 = tk.Label(canvas, font=t)
+        label1.pack()
+        label1.config(bg=color)
+        label1.config(text=txt)
+        canvas.title(title)
+        canvas.geometry(size)
+        canvas.config(bg=color)
+        Thread(target=canvas.mainloop()).start()
+        Thread(target=pl()).start()
+
+
+
+
+
+
     else:
         print("wrong code please try again")
         pl()
