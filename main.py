@@ -1,6 +1,6 @@
 from math import *
 import tkinter as tk
-from threading import Thread
+
 # my programing launguage
 
 print("Welcome to v programing language (vpl)\n ©️all rights reserved")
@@ -146,8 +146,7 @@ def pl():
         canvas.title(title)
         canvas.geometry(size)
         canvas.config(bg=color)
-        Thread(target=canvas.mainloop()).start()
-        Thread(target=pl()).start()
+        canvas.mainloop()
 
 
 
